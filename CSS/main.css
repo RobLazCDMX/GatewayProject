@@ -1,0 +1,237 @@
+*{      /* this resets to zero any default values*/
+    margin: 0;  
+    padding: 0;
+}
+
+/* all pages except Home page */
+header {
+    background-color: green;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 3rem;
+    font-family: halloge;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left:8%;
+    letter-spacing: .5rem;   
+}
+
+nav a:hover{
+    color:red;
+}
+
+/* Home page css*/
+.MxVid {
+    position: fixed;
+    top: 1.75%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;  
+} 
+
+.content {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    background-color: transparent;
+    color: green;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-family: halloge;
+}
+
+#homePageFooter {
+    z-index: 1; /*allow you bring content in front of other content*/
+    position: fixed;
+    text-align: center;
+    bottom: 0%;
+    background-color:black;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1rem;
+    padding-top: .75%;
+}
+
+
+/* To do page  */
+section h2 {
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2em;
+    font-size: 2em;
+}
+
+.flexBox {
+    
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+}
+
+.flexBox p {
+    padding-top: 2%;
+}
+
+.flexBox div {
+    padding: 1%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-family: fantasy;
+    padding-bottom: 1%;
+}
+
+.box1 img{
+   padding-left: 3%;
+   padding-right: 5%;
+}
+
+#Angel {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#Diego {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#Diego2 { max-width: 100%; }
+
+
+
+/* Cuisine Page  */
+#mxCuisine h2 {
+    font-size: 3em;
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+
+section p {
+    font-size: 22px;
+    text-align: center;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.flexBoxCuisine {
+    padding: 1%;
+    font-size: 18px;
+    text-align: center;
+    display: flex;   
+}
+
+.boxA {
+    flex: 1;
+    text-align:center;
+}
+.box1A {
+    flex: 1;
+}
+
+.boxB {
+    flex: 1;
+    order: 2;
+    text-align: center;
+}
+
+.box1B {
+    order: 1;
+}
+
+.boxE {
+    order: 1;
+}
+
+.box1E {
+    order: 3;
+}
+
+.box2E {
+    order: 2;
+}
+
+/* Contaact Page  */
+form {
+    padding-top:5%;
+    padding-bottom: 5.5%;
+    color: white;
+    text-align: center; 
+    background-color: maroon;
+    overflow: hidden;
+}
+
+form label {
+    display: block;
+    padding: 1.25rem;
+}
+
+form input[type="submit"] {
+    padding: 1%;
+    margin: 4%;
+    background-color: black;
+    color: white;   
+}
+
+form textarea {
+    min-height: 10vh;
+    min-width: 20vw;
+}
+
+/* footer for all pages */
+footer {
+    position: absolute;
+    text-align: center;
+    background-color:black;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .flexBoxCuisine{ flex-direction: column;}
+    .flexBoxCuisine div { padding: 0;}
+    .MxVid{ top: 3%;}
+}
+
+
+@media screen and (max-width: 600px) {
+    .MxVid{ top: 4%;}
+}
