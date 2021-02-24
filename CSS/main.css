@@ -79,6 +79,11 @@ nav a:hover{
     padding-top: .75%;
 }
 
+#homePageFooter img {
+    vertical-align: middle;
+    margin: 0px 15px 0px 15px;
+}
+
 
 /* To do page  */
 section h2 {
